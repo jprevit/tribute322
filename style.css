@@ -25,7 +25,11 @@ img {
 
 .early-career {
     background-image: url(assets/KiBlast.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Targeting a child of another element */
@@ -34,9 +38,17 @@ img {
 } */
 
 .card {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     border-radius: 5px;
     margin: 5px;
-    max-width: 40vw;
+    width: 40vw;
+    padding-inline-end: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card>img {
+    border-radius: 5px 0px 0px 5px;
+    ;
 }
