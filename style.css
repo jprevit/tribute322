@@ -1,3 +1,9 @@
+:root {
+    --db-red: #ef4433;
+    --db-afterhours: #292222;
+    --text-light: white;
+}
+
 body {
     text-shadow: 5px black;
     margin: 0px;
@@ -8,7 +14,10 @@ section {
     color: #f5f5f5;
 }
 
-
+a {
+    text-decoration: none;
+    color: var(--text-light)
+}
 
 img {
     width: 200px;
@@ -17,7 +26,7 @@ img {
 /* Another way to target child elements is to nest rules within other rules */
 
 .hero {
-    background-color: red;
+    background-color: var(--db-red);
     text-align: center;
 
     img {
@@ -58,15 +67,77 @@ img {
 
 .card>img {
     border-radius: 5px 0px 0px 5px;
-    ;
 }
 
 .dragonball {
-    background-color: red;
-    display: flex;
+    background-color: var(--db-red);
+    background-image: url(https://mickshannahan.github.io/AkiraToriyamaTribute/assets/BulmaYamchaGokuRed.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 
     .card {
         display: block;
         padding: 5px;
+        border-radius: 0px;
+        border: solid black 5px;
     }
+
+    ;
+}
+
+.gallery {
+    background-color: var(--db-afterhours);
+    text-align: center;
+}
+
+.gallery-shelf {
+    background-color: tan;
+    justify-content: center;
+    gap: 1em;
+    padding: 3em;
+
+
+    div {
+        width: 25vw;
+        border: solid black;
+        background-color: var(--text-light);
+
+        img {
+            aspect-ratio: 1/1;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+
+
+    /* An em is a relative measurement that lets you define a distance as a multiple of the height of the text in the element */
+    p {
+        margin: 2em;
+    }
+}
+
+
+/* Utility Classes */
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-dark {
+    color: var(--db-afterhours);
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 15px rgb(74, 74, 74, .8);
 }
