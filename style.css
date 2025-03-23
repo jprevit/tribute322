@@ -1,0 +1,42 @@
+body {
+    text-shadow: 5px black;
+    margin: 0px;
+}
+
+section {
+    padding: 5px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.hero {
+    background-color: red;
+}
+
+.early-career {
+    background-image: url(assets/KiBlast.png);
+    display: flex;
+}
+
+/* Targeting a child of another element */
+/* .early-career>.card {
+    background-color: black;
+} */
+
+.card {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+    max-width: 40vw;
+}
